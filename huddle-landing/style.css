@@ -1,0 +1,70 @@
+*/
+* , *::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 85vw;
+
+}
+
+
+.main-content { 
+    display: flex;
+    max-width: 85vw;
+    position: absolute;
+    top: 20rem;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  
+}
+
+
+/*
+.heading {
+    position: relative;
+}*/
+
+
+.main-content--photo{
+    align-items: flex-end;
+ 
+}
+
+.main-content--text {
+    color: #fff;
+align-items: center;
+width: 30%;
+padding: 5rem;
+    
+}
+
+.content-title {
+    display: flex;
+    align-content: flex-start;
+    font-size:3.5rem;
+}
+
+.content-text {
+    font-size: 1.5rem;
+
+}
