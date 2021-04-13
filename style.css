@@ -1,0 +1,155 @@
+*/
+* , *::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5rem;
+    margin: 0 auto;
+   
+
+}
+
+
+
+.main-content { 
+    display: flex;
+    max-width: 95vw;
+    justify-content: center;
+    top: 10rem;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: relative;
+  
+}
+
+
+/*
+.heading {
+    position: relative;
+}*/
+
+
+.main-content--left{
+    align-items: flex-end;
+ 
+
+ 
+}
+
+.mockup {
+    width: 100%;
+}
+
+.main-content--right {
+    color: #fff;
+align-items: center;
+justify-content: center;
+width: 35%;
+padding: 6rem;
+display: flex;
+flex-direction: column;
+
+    
+}
+
+.content-title {
+    display: flex;
+    align-content: center;
+    font-size:3.5rem;
+}
+
+.content-text {
+    font-size: 1.5rem;
+margin-bottom: 5rem;
+}
+
+.button__register:link,
+.button__register:visited {
+    background-color:#fff;
+    color:hsl(257, 40%, 49%);
+    border-radius: 10rem;
+    padding: 1rem 4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);;
+    transition: all .2s;
+    text-decoration: none;
+    align-self: flex-start;
+ 
+}
+
+.button__register:hover {
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); 
+    color: #fff;    
+}
+
+.button__register:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);  }
+
+ 
+footer {
+  
+    align-self: flex-end;
+    letter-spacing: 1rem;
+
+}
+
+.icon {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.icon:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:800px) {
+
+    html {
+        font-size: 50.5%;
+    
+    }
+    .main-content {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .main-content--right {
+    width: 95%;
+    padding: 2rem;
+
+ justify-content: center;
+    }
+
+    .button__register:link,
+    .button__register:visited {
+        align-self: center;
+    }
+
+    footer {
+        margin-top: 3rem;
+        align-self: center;
+    }
+}
